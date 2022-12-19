@@ -1,0 +1,193 @@
+
+/* Responsive CSS for smaller resolutions */
+
+@media screen and (max-width: 600px) {
+    .menuToggle{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .header{
+        width: auto;
+        height: 5vh;
+        background-color: #3EADCF;  
+        border: 1px black solid;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mainbody{
+        width: 100vw;
+        height: 90vh;
+        background-color: #C3E3FF;
+        background-color: white;
+        border: 1px black solid;
+        padding: 1%;
+    }
+    .footer{
+        width: auto;
+        height: 5vh;
+        background-color: #ABE9CD;
+        border: 1px black solid;
+        background-color: lightcoral;
+    }
+    #menuContainer{
+        height: 100vh;
+        width: 15vw;
+        float: left;
+        position: relative;
+        background-color: black;
+        display: none;
+        z-index: 1;
+        background-color: lightcoral;
+        border: 5px black solid;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 5vw;
+        text-decoration: underline;
+        font-family: 'Kanit', sans-serif;
+    }
+    h2{
+        font-family: 'Kanit', sans-serif;
+        font-size: 225%;
+        font-weight: bold; 
+    }
+    p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    li{
+        font-family: 'Kanit', sans-serif;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 1.5vw;        
+    }    
+}
+
+/* Responsive CSS for larger resolutions */
+
+@media screen and (min-width: 600px) {  
+    .container{
+        height: auto;
+        width: 70vw;
+        margin: 0;
+    }
+    .header{
+        width: auto;
+        height: 10vh;
+        background-color: #3EADCF;  
+        border: 1px black solid;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mainbody{
+        width: auto;
+        height: 80vh;
+        background-color: #C3E3FF;
+        background-color: white;
+        border: 1px black solid;
+        padding: 1%;
+    }
+    .footer{
+        width: auto;
+        height: 10vh;
+        background-color: #ABE9CD;
+        border: 1px black solid;
+        background-color: lightcoral;
+    }
+    #menuContainer{
+        height: 100vh;
+        width: 15vw;
+        float: left;
+        position: relative;
+        background-color: black;
+        display: none;
+        z-index: 1;
+        background-color: lightcoral;
+        border: 5px black solid;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 2.3vw;
+        text-decoration: underline;
+        font-family: 'Kanit', sans-serif;
+    }
+    h2{
+        font-family: 'Kanit', sans-serif;
+        font-size: 225%;
+        font-weight: bold; 
+    }
+    p{
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    li{
+        font-family: 'Kanit', sans-serif;
+        font-size: 150%;
+        font-weight: bold;
+    }
+} 
+
+/* CSS for elements that don't need responsive changes */
+#mainHeader{
+    float: right;
+    font-size: 2vw;
+}
+
+img{
+    border-radius: 10px;
+}
+#container{
+    width: 100vw;
+    height: 100vh;
+}
+.noSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.menuButton{ 
+    cursor: pointer; 
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+body{
+    margin: 0;
+    display: flex;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+#images{
+    display: flex;
+    justify-content: space-between;
+    height: 15vw;
+}
+
+
+

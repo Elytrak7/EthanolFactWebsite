@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script type="module" src="scripts.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer>
+        import { menuButtons } from "./scripts.js";
+        
+        menuButtons[0].addEventListener("click", function(){
+            document.location.href = 'index.html';
+        });
+        menuButtons[1].addEventListener("click", function(){
+            document.location.href = 'distillation.html';
+        });
+        menuButtons[2].addEventListener("click", function(){
+            document.location.href = 'medicaluses.html';
+        });
+        menuButtons[3].addEventListener("click", function(){
+            document.location.href = 'indususes.html';
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div  id="menuContainer">    
+        <!-- Menu Items -->
+        <h4 class="noSelect menuButton"> Homepage </h4>
+        <h4 class="noSelect menuButton"> Quick Facts About Ethanol </h4>
+        <h4 class="noSelect menuButton"> Medical Uses </h4>
+        <h4 class="noSelect menuButton"> Industrial Applications </h4>
+        </div>
+        <div class="parent"> 
+            <div class="container"> 
+                <div class="header"> 
+                    <h4 class="menuToggle menuButton noSelect">Show Menu</h4> 
+                    <h1 id="mainHeader"> Ethanol Fact Website </h1>
+                </div>
+                <div class="mainbody">
+                    <h1> Ethanol Chemical Structure </h1>
+                    <h2 style="text-align: center; font-size: 5vw; text-decoration: underline;"> C₂H₆O </h2>
+                    <div id="images" style="justify-content: center;">
+                        <img src="images/structure.png" alt="structure" style="width: 50vw; height: 35vh;">
+                    </div>
+                </div>
+                <div class="footer"> 
+                    <p id="loginCount"> </p>
+                    <p> Tymoteusz Gmiter, December 2022. </p>
+                    <p> Information from multiple sources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

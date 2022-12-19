@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script type="module" src="scripts.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer> 
+        import { menuButtons } from "./scripts.js";
+
+        menuButtons[0].addEventListener("click", function(){
+            document.location.href = 'index.html';
+        });
+        menuButtons[1].addEventListener("click", function(){
+            document.location.href = 'chemicalstruct.html';
+        });
+        menuButtons[2].addEventListener("click", function(){
+            document.location.href = 'medicaluses.html';
+        });
+        menuButtons[3].addEventListener("click", function(){
+            document.location.href = 'indususes.html';
+        });    
+    </script>
+</head>
+<body>
+    <div  id="menuContainer">    
+    <!-- Menu Items -->
+    <h4 class="noSelect menuButton"> Homepage </h4>
+    <h4 class="noSelect menuButton"> Chemical Structure </h4>
+    <h4 class="noSelect menuButton"> Medical Uses </h4>
+    <h4 class="noSelect menuButton"> Industrial Applications </h4>
+    </div>
+    <div class="parent"> 
+        <div class="container"> 
+            <div class="header"> 
+                <h4 class="menuToggle menuButton noSelect">Show Menu</h4> 
+                <h1 id="mainHeader"> Ethanol Fact Website </h1>
+            </div>
+            <div class="mainbody">
+                <h1> Ethanol Facts </h1>
+                <p></p>
+                <h2> Facts about Ethanol </h2>
+                <ul>
+                    <li> Melting Point - 78.37 °C</li>
+                    <li> Ethanol reduces greenhouse gas emissions by 40-50% when compared directly to gasoline </li>
+                    <li> Today, ethanol makes up 10% of the U.S. gasoline supply. That’s up from less than 1% just 20 years ago.</li>
+                    <li> Since 2001: Natural gas energy required to produce a gallon of ethanol has fallen 28%.</li>
+                    <li> Producing 20 barrels of ethanol requires just 1 barrel of crude oil.</li>
+                    <li> 2012: 211 ethanol plants produced 13.3 billion gallons.</li>
+                    <li> Commonly made from corn </li>
+                    <li> Made from fermentation </li>
+                    <li> Substitute for petrol</li>
+                    <li> Can be blended with petrol </li>
+                </ul>
+                <div id="images">
+                </div>
+            </div>
+            <div class="footer"> 
+                <p id="loginCount"> </p>
+                <p> Tymoteusz Gmiter, December 2022. </p>
+                <p> Information from multiple sources.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

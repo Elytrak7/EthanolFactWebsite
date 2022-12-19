@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script type="module" src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer>
+        import { menuButtons } from "./scripts.js";
+
+        menuButtons[0].addEventListener("click", function(){
+            document.location.href = 'index.html';
+        });
+        menuButtons[1].addEventListener("click", function(){
+            document.location.href = 'distillation.html';
+        });
+        menuButtons[2].addEventListener("click", function(){
+            document.location.href = 'chemicalstruct.html';
+        });
+        menuButtons[3].addEventListener("click", function(){
+            document.location.href = 'indususes.html';
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div  id="menuContainer">    
+        <!-- Menu Items -->
+        <h4 class="noSelect menuButton"> Homepage</h4>
+        <h4 class="noSelect menuButton"> Quick Facts About Ethanol </h4>
+        <h4 class="noSelect menuButton"> Chemical Structure</h4>
+        <h4 class="noSelect menuButton"> Industrial Applications </h4>
+        </div>
+        <div class="parent"> 
+            <div class="container"> 
+                <div class="header"> 
+                    <h4 class="menuToggle menuButton noSelect">Show Menu</h4> 
+                    <h1 id="mainHeader"> Ethanol Fact Website </h1>
+                </div>
+                <div class="mainbody">
+                    <h1> Ethanol Medical Uses </h1>
+                        <ul>
+                            <li>Ethanol is used as a solvent to dissolve the active ingredient in some medicines or as an extraction solvent
+                                in herbal medicinal products. Ethanol has also been used as an antimicrobial preservative, possessing bactericidal
+                                and fungicidal activity.
+                            </li>
+                            <li>
+                                A few of the products that contain ethanol include certain formulations of Benadryl, Cheracol Plus, Dimetane,
+                                Donnatal, Geritol, Novahistine, Robitussin, Sominex, Triaminic, Tylenol and Vicks.
+                            </li>
+                            <li>
+                                Ethanol is a component of many herbal fluid preparations, since it is an excellent solvent for the extraction 
+                                of herbal drugs and contributes to the stability of these medicines.
+                            </li>
+                            <li>
+                                Ethanol is anti-septic.
+                            </li>
+                        </ul>
+                    <div id="images" style="justify-content: center;">
+                        <img src="images/ethanolmedical1.png" alt="ethanolmedical1">     
+                    </div>
+                </div>
+                <div class="footer"> 
+                    <p id="loginCount"> </p>
+                    <p> Tymoteusz Gmiter, December 2022. </p>
+                    <p> Information from multiple sources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

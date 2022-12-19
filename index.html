@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script type="module" src="scripts.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" defer>
+        import { menuButtons } from "./scripts.js";
+
+        menuButtons[0].addEventListener("click", function(){
+            document.location.href = 'distillation.html';
+        });
+        menuButtons[1].addEventListener("click", function(){
+            document.location.href = 'chemicalstruct.html';
+        });
+        menuButtons[2].addEventListener("click", function(){
+            document.location.href = 'medicaluses.html';
+        });
+        menuButtons[3].addEventListener("click", function(){
+            document.location.href = 'indususes.html';
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div  id="menuContainer">    
+        <!-- Menu Items -->
+        <h4 class="noSelect menuButton"> Quick Facts About Ethanol </h4>
+        <h4 class="noSelect menuButton"> Chemical Structure</h4>
+        <h4 class="noSelect menuButton"> Medical Uses </h4>
+        <h4 class="noSelect menuButton"> Industrial Applications </h4>
+        </div>
+        <div class="parent"> 
+            <div class="container"> 
+                <div class="header"> 
+                    <h4 class="menuToggle menuButton noSelect">Show Menu</h4> 
+                    <h1 id="mainHeader"> Ethanol Fact Website </h1>
+                </div>
+                <div class="mainbody">
+                    <h1> Ethanol </h1>
+                    <p> 
+                        Ethanol, also known as ethyl alcohol, pure alcohol, grain alcohol, or drinking alcohol, is often abbreviated as EtOH. EtOH is a light alcohol and
+                        is a volatile, colourless, flammable liquid with a characteristic odour. EtOH burns with an almost invisible flame and is biodegradable.
+                        <br>
+                        Ethanol is naturally produced by the fermentation process of sugars by yeasts or via petrochemical processes such as ethylene hydration. 
+                        It has medical applications as an antiseptic and disinfectant. It is used as a chemical solvent and in the synthesis of organic compounds, 
+                        and as a fuel source. Ethanol also can be dehydrated to make ethylene, an important chemical feedstock. As of 2006, world production of ethanol 
+                        was 51 gigalitres (1.3×1010 US gallons), coming mostly from Brazil and the U.S.
+                    </p>
+                    <div id="images">
+                        <img src="images/ethanolpicture1.jpg" alt="imgethanol">
+                        <img src="images/ethanolpicture2.jpg" alt="imgethanol">
+                        <img src="images/ethanolpicture3.jpg" alt="imgethanol">
+                    </div>
+                </div>
+                <div class="footer"> 
+                    <p id="loginCount"> </p>
+                    <p> Tymoteusz Gmiter, December 2022. </p>
+                    <p> Information from multiple sources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
